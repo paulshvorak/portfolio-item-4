@@ -1,0 +1,130 @@
+/******************* CSS HERE ********************/
+
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  transition: ease 0.5s;
+  background: #26272d;
+}
+
+.c-menu__close:focus {
+  outline: none;
+}
+
+body.has-active-menu {
+  overflow: hidden;
+}
+
+.c-menu--slide-left {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    width: 300px;
+  }
+}
+
+.c-menu--slide-left .c-menu__item,
+.c-menu--slide-left .c-menu__link {
+  display: block;
+}
+
+.c-menu--slide-left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    transform: translateX(-300px);
+  }
+}
+
+.c-menu--slide-left.is-active {
+  transform: translateX(0);
+}
+
+.c-menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-menu__close {
+  cursor: pointer;
+}
+
+.fa-times {
+  color: #FFF;
+  font-family: "FontAwesome"
+}
+
+.c-menu__link {
+  color: #FFF;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.c-menu__link:hover {
+  color: #267df4;    
+}
+
+.c-menu__items {
+  margin-top: 30px;
+}
+
+.btn-apple {
+  background-color: #267df4;
+  border: 1px solid rgba(38, 39, 45, 0.1);
+  border-radius: 10px; 
+  color: #FFF;
+  width: 120px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 16px;
+  margin-top: 30px;
+}
+
+.c-menu__footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+}
+
+.c-menu__txt {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c-menu__txt 
+a {
+  color: #267df4;
+  text-decoration: underline;
+}
+
+.c-menu__txt 
+a:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+.socials {
+  padding-top: 20px;
+}
+
+.socials-icon {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 15px;
+}
+
+.socials-icon:hover {
+  color: #FFF;
+  cursor: pointer;
+}

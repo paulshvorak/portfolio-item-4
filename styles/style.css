@@ -18,6 +18,7 @@ a {
 	text-decoration: none;
 }
 
+
 p {
 	font-size: 18px;
     line-height: 28px;
@@ -59,8 +60,35 @@ p {
 	display: flex;
 }
 
-.nav-item {
+.nav-item
+a {
+	color: #26272d;
+    text-decoration: none;
 	padding: 0 20px;
+}
+
+.nav-item
+a:hover {
+	color: #267df4;
+	text-decoration: none;
+}
+
+.nav-item
+.btn-apple {
+	background-color: #267df4;
+  	border: 1px solid rgba(38, 39, 45, 0.1);
+  	border-radius: 30px; 
+  	color: #FFF;
+  	width: 120px;
+  	font-size: 16px;
+  	font-weight: 400;
+  	padding: 9px 16px;
+}
+
+.nav-item
+.btn-apple:hover {
+  	text-decoration: none;
+  	color: #FFF;
 }
 
 .nav-btn {
@@ -78,7 +106,7 @@ p {
 /*********** MAIN ***********/
 
 .main {
-	padding: 200px 0 510px;
+	padding: 150px 0 510px;
 	text-align: center;
 	background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
@@ -88,7 +116,6 @@ p {
 }
 
 .main-block {
-	max-width: 600px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -150,6 +177,7 @@ p {
 
 .iphone-feature,
 .map-feature {
+	position: relative;
 	padding: 0 20px 50px;
 }
 
@@ -157,7 +185,8 @@ p {
 .map-feature-title,
 .i-screens-title,
 .get-title,
-.plan-title {
+.plan-title,
+.subscribe-title {
 	font-size: 48px;
     line-height: 52px;
     margin-bottom: 64px;
@@ -365,7 +394,13 @@ span {
 	display: inline-block;
 }
 
-/*********** GET BLOCK ***********/
+.btn-get:hover,
+.btn-app:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*********** GUSTOMERS BLOCK ***********/
 
 .customers {
 	padding: 120px 0;
@@ -409,6 +444,13 @@ span {
 
 .item-inside {
 	padding-top: 120px;
+}
+
+.carousel-inner,
+.carousel,
+.slide {
+	border: none;
+	box-shadow: none;
 }
 
 .customers
@@ -460,7 +502,7 @@ li.active {
 
 .plan-option {
 	background-color: #ebebed;
-	width: 280px;
+	width: 270px;
 	text-align: center;
 	padding: 40px 15px 50px;
 	display: block;
@@ -470,7 +512,7 @@ li.active {
 }
 
 .highlighted {
-	width: 295px;
+	width: 290px;
 	background-color: #FFF;
 	box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
 	z-index: 3;
@@ -545,6 +587,8 @@ li.active {
 	margin-top: 20px;
 }
 
+
+
 .subscribe-promise {
 	font-size: 14px;
     margin-top: 10px;
@@ -581,7 +625,8 @@ li.active {
 }
 
 .footer
-li {
+li
+a {
 	color: #8c8f94;
     line-height: 36px;
 }
@@ -602,12 +647,144 @@ li {
     letter-spacing: 0.1em;
 }
 
-/*
-.iphone-feature {
-	padding: 240px 0 330px;
-}*/
+@media (min-width: 768px) {
+	
+	.main {
+		padding: 200px 0 510px;
+	}
 
-@media (min-width: 1024px) {
+	.main-iphone {
+		width: 370px;
+		left: calc(50% - 185px);
+		top: 550px;
+	}
+
+	.iphone-screens {
+		padding-bottom: 700px;
+	}
+
+	.main-img-item {
+		left: calc(50% - 145px);
+	}	
+
+	.sec-img {
+		width: 240px;
+	}
+
+	.img-item-1 {
+		top: 380px;
+		left: 50%;
+		margin-left: -655px; 
+	}
+
+	.img-item-2 {
+		top: 380px;
+		left: 50%;
+		margin-left: -400px;
+	}
+
+	.img-item-3 {
+		top: 380px;
+		right: 50%;
+		margin-right: -385px;
+	}
+
+	.img-item-4 {
+		top: 380px;
+		right: 50%;
+		margin-right: -655px;
+	}
+
+	.main-img {
+		width: 290px;
+	}
+
+
+	.plan-option {
+		float: left;
+	}
+
+	.email-form,
+	.btn-get {
+		display: inline-block;
+	}
+
+	.btn-get {
+		margin-left: 20px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.iphone-feature {
+		padding: 240px 0 330px;
+	}
+
+	.iphone-showcase {
+		position: absolute;
+		bottom: 130px;
+		right: 50%;
+		width: 900px;
+	}
+
+	.i-feature-img,
+	.map-img {
+		width: 100%;
+	}
+
+	.map-feature {
+		padding-bottom: 140px;
+    	position: relative;
+    	overflow: hidden;
+	}
+
+	.map-img-block {
+		position: absolute;
+    	bottom: 110px;
+    	left: 50%;
+    	width: 900px;
+    }	
+
+	.iphone-screens {
+		padding-bottom: 850px;
+	}
+
+	.main-img-item {
+		left: calc(50% - 190px);
+	}	
+
+	.sec-img {
+		width: 320px;
+	}
+
+	.img-item-1 {
+		top: 410px;
+		left: 50%;
+		margin-left: -870px; 
+	}
+
+	.img-item-2 {
+		top: 410px;
+		left: 50%;
+		margin-left: -530px;
+	}
+
+	.img-item-3 {
+		top: 410px;
+		right: 50%;
+		margin-right: -530px;
+	}
+
+	.img-item-4 {
+		top: 410px;
+		right: 50%;
+		margin-right: -870px;
+	}
+
+	.main-img {
+		width: 390px;
+	}
+
 	.header-left,
 	.header-right,
 	.logo {
@@ -618,5 +795,25 @@ li {
 	.nav-btn {
 		padding: 0 40px 0 0;
 	}
+
+	.plan-option {
+		padding: 35px 15px 45px;
+	}	
+
+	.highlighted {
+		padding: 40px 15px 50px;
+	}
+
+	.footer-made-by {
+		margin-top: 0;
+		text-align: right;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.plan-prices {
+		margin: 0 auto;
+	} 
 
 }
